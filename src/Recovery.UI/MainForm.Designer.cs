@@ -46,6 +46,7 @@
             RecoverBtn.Text = "Recover";
             RecoverBtn.TextAlign = ContentAlignment.TopCenter;
             RecoverBtn.UseVisualStyleBackColor = true;
+            RecoverBtn.Click += RecoverBtn_Click;
             // 
             // XrayListBox
             // 
@@ -53,15 +54,17 @@
             XrayListBox.ItemHeight = 15;
             XrayListBox.Location = new Point(12, 12);
             XrayListBox.Name = "XrayListBox";
-            XrayListBox.Size = new Size(350, 350);
+            XrayListBox.Size = new Size(350, 349);
             XrayListBox.TabIndex = 1;
+            XrayListBox.SelectedIndexChanged += XrayListBox_SelectedIndexChanged;
             // 
             // PreviewBox
             // 
+            PreviewBox.InitialImage = Properties.Resources.CS7600;
             PreviewBox.Location = new Point(387, 12);
             PreviewBox.Name = "PreviewBox";
             PreviewBox.Size = new Size(350, 350);
-            PreviewBox.SizeMode = PictureBoxSizeMode.Zoom;
+            PreviewBox.SizeMode = PictureBoxSizeMode.StretchImage;
             PreviewBox.TabIndex = 2;
             PreviewBox.TabStop = false;
             // 

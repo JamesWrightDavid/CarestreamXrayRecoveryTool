@@ -15,6 +15,6 @@
         /// <summary>
         /// Any error message encountered during the operation.
         /// </summary>
-        public string ErrorMessage { get; set; }
+        public string? ErrorMessage { get; set; }
     }
 }

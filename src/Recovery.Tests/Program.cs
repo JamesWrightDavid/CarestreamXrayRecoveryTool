@@ -12,7 +12,9 @@ namespace CS7600XrayRecover.ConsoleTest
         {
             // Provide the initial prompt to the user for searching X-rays
             Console.WriteLine("Do you want to search for lost X-rays? (yes/no)");
-            string response = Console.ReadLine().ToLower();
+            string? input = Console.ReadLine();
+            string response = input?.ToLower() ?? string.Empty;
+
 
             // If the user's response isn't affirmative, exit the program
             if (response != "yes")
