@@ -43,7 +43,7 @@ namespace Recovery.Core.Services
                 }
 
                 // Format the filename for the recovered X-ray using sanitized names and the date the X-ray was taken.
-                string destinationFileName = $"{sanitizedFirstName} {sanitizedLastName} {lostXray.DateTaken:yyyy-MM-dd}.dcm";
+                string destinationFileName = $"{sanitizedFirstName} {sanitizedLastName} {lostXray.DateTaken:yyyy-MM-dd HH-mm-ss}.dcm";
                 string destinationFilePath = Path.Combine(patientSubFolder, destinationFileName);
 
                 // Copy the lost X-ray to the destination. If a file with the same name already exists, overwrite it.
