@@ -14,7 +14,7 @@ namespace Recovery.UI
     public partial class MainForm : Form
     {
         // List to store the lost X-rays found.
-        private List<LostXray>? _lostXrays;
+        private List<LostXray> _lostXrays;
 
         /// <summary>
         /// Initializes a new instance of the MainForm class.

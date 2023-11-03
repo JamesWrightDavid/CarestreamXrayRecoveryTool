@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             RecoverBtn = new Button();
             XrayListBox = new ListBox();
             PreviewBox = new PictureBox();
@@ -77,7 +76,6 @@
             Controls.Add(PreviewBox);
             Controls.Add(XrayListBox);
             Controls.Add(RecoverBtn);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Carestream Xray Recovery Tool";
             ((System.ComponentModel.ISupportInitialize)PreviewBox).EndInit();
