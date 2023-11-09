@@ -3,17 +3,20 @@ This repository contains the code for the Carestream X-ray Recovery Tool.
 
 ## Introduction
 
-The CS X-ray Recovery Tool, now rewritten in C# with a modular class structure, provides an advanced solution for retrieving lost X-ray images from the Carestream CS7600 system and saving them to the user's desktop. This version enhances functionality with a robust graphical interface that previews images and simplifies user interaction, tailored specifically for dental clinics and medical imaging environments requiring a dependable backup or recovery of patient X-ray images.
+The CS X-ray Recovery Tool, now rewritten in C# with a modular class structure, provides a solution for retrieving lost X-ray images from the Carestream CS7600 system and saving them to the user's desktop. 
 
 ## Overview
 
 The C# version introduces a structured approach by separating functionalities into distinct classes:
 
-1. **LostXray Finder**: Scans the specified directories for unimported X-ray images due to system crashes or network issues.
-2. **Recovery Service**: Handles the retrieval and storage of the found X-ray images in a structured directory on the desktop.
-3. **Error Handling**: Implements custom exception handling to ensure the tool's stability and provide detailed error logs.
-4. **User Interface**: Provides a Windows Forms-based interface that lists all discovered X-rays with an image preview feature, enhancing the user's ability to verify and recover images.
-5. **Packaging**: The tool is packaged as an executable using Costura.Fody, streamlining installation and distribution without dependency concerns.
+
+1. **LostXray**: Model of lost x-ray details.
+2. **CS76000XrayFinder**: Scans the specified directories for unimported X-ray images due to system crashes or network issues.
+3. **FinderResult**: Model for the X-ray Finder result.
+4. **RecoveryService**: Handles the retrieval and storage of the found X-ray images in a structured directory on the desktop.
+5. **Error Handling**: Implements error handling to ensure the tool's stability and provide detailed errors.
+6. **User Interface**: Provides a Windows Forms-based interface that lists all discovered X-rays with an image preview feature, enhancing the user's ability to verify and recover images.
+7. **Packaging**: The tool is packaged as an executable, streamlining installation and distribution without dependency concerns.
 
 ## Detailed Workflow
 
